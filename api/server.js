@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const AIRequestHandler = require('./AIRequestHandler');
+const AIRequestHandler = require('../AIRequestHandler');
 
 const app = express();
 
@@ -99,8 +99,6 @@ p {
 
 const PORT = 3000;
 
-app.listen(PORT, () => {
+module.exports = app;
 
-    console.log(`Servidor ejecutándose en puerto ${PORT}`);
-
-});
+;
